@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>SSAFY HOME PLEASE</title>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico" />
+  <link rel="manifest" href="assets/img/favicons/manifest.json" />
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="assets/css/theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body>
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block"
+      data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container">
+
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="70" alt="..." /></a>
+                       <div class="form-group col-md-2">
+            <select class="form-select bg-secondary text-light" id="interest">
+              <option value="">관심목록</option>
+            </select>
+          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+            <!-- <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base"> -->
+            <li class="nav-item px-2" data-anchor="data-anchor">
+              <a class="nav-link fw-medium active" aria-current="page" href="#hello">hello</a>
+            </li>
+            <li class="nav-item px-2" data-anchor="data-anchor">
+              <a class="nav-link" href="#mapstart">Map</a>
+            </li>
+            <li class="nav-item px-2" data-anchor="data-anchor">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+           
+            
+            
+          </ul>
+          <form class="ps-lg-5">
+                   <span id ="loginText">
+            <a class="btn btn-light order-1 order-lg-0"  onclick='window.open("signup.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=800,height=600");'>login	
+              <svg class="bi bi-person-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+              </svg></a>
+              </span>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section id="hello">
+      <div class="bg-holder" style="
+            background-image: url(assets/img/gallery/hero.png);
+            background-position: center;
+            background-size: cover;
+          "></div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row align-items-center min-vh-50 min-vh-sm-75">
+          <div class="col-md-5 col-lg-6 order-0 order-md-1">
+            <img class="w-70" src="assets/img/illustrations/hero-header.png" alt="..." />
+          </div>
+          <div class="col-md-7 col-lg-6 text-md-start text-center">
+            <h1 class="text-light fs-md-5 fs-lg-6">SSAFY HOME PLEASE</h1>
+            <p class="text-light">RyeoHwan Jinho</p>
+            <a class="btn btn-primary" href="#mapstart" role="button">집보러 가기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-8" id="mapstart">
+      <div class="container">
+        <div style="height: 70px"></div>
+
+        
+        <h2 class="text-center mt-5 mb-3">아파트 매매 정보</h2>
+        <div class="row col-md-12 justify-content-center mb-2">
+          <div class="form-group col-md-2">
+            <select class="form-select bg-secondary text-light" id="sido">
+              <option value="">시도선택</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <select class="form-select bg-secondary text-light" id="gugun">
+              <option value="">구군선택</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <select class="form-select bg-secondary text-light" id="dong">
+              <option value="">동선택</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <select class="form-select bg-dark text-light" id="year"></select>
+          </div>
+          <div class="form-group col-md-2">
+            <select class="form-select bg-dark text-light" id="month">
+              <option value="">매매월선택</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <button type="button" id="list-btn" class="btn btn-outline-primary">
+              아파트매매정보가져오기
+            </button>
+            <button type="button" id="star-btn">
+            <img id="star-img" src="assets/img/bin_star.png" width=40>
+            </button>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-4">
+
+          </div> -->
+        <!-- <div class="col-8"> -->
+        <div id="map" style="width: 100%; height: 500px"></div>
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+        <table class="table table-hover text-center" style="display: none">
+          <tr>
+            <th>아파트이름</th>
+            <th>층</th>
+            <th>면적</th>
+            <th>법정동</th>
+            <th>거래금액</th>
+          </tr>
+          <tbody id="aptlist"></tbody>
+        </table>
+      </div>
+      <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2de65148f95fbc1b6928d324d0c9026c&libraries=services"></script>
+      <script>
+        ///////////////////////// select box 설정 (지역, 매매기간) /////////////////////////
+
+        let date = new Date();
+        var container = document.getElementById("map");
+        var myLatLng = new kakao.maps.LatLng(37.5012743, 127.039585);
+        var options = {
+          center: myLatLng,
+          level: 3,
+        };
+        var markers = [];
+        let apts = [];
+
+        var map = new kakao.maps.Map(container, options);
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+        window.onload = function () {
+          let yearEl = document.querySelector("#year");
+          let yearOpt = `<option value="">매매년도선택</option>`;
+          let year = date.getFullYear();
+          for (let i = year; i > year - 20; i--) {
+            yearOpt += `<option value="${i}">${i}년</option>`;
+          }
+          yearEl.innerHTML = yearOpt;
+
+          // 브라우저가 열리면 시도정보 얻기.
+          sendRequest("sido", "*00000000");
+        };
+
+        document.querySelector("#year").addEventListener("change", function () {
+          let month = date.getMonth() + 1;
+          let monthEl = document.querySelector("#month");
+          let monthOpt = `<option value="">매매월선택</option>`;
+          let yearSel = document.querySelector("#year");
+          let m = yearSel[yearSel.selectedIndex].value == date.getFullYear() ? month : 13;
+          for (let i = 1; i < m; i++) {
+            monthOpt += `<option value="${i < 10 ? "0" + i : i}">${i}월</option>`;
+          }
+          monthEl.innerHTML = monthOpt;
+        });
+
+        // https://juso.dev/docs/reg-code-api/
+        // let url = "https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes";
+        // let regcode = "*00000000";
+        // 전국 특별/광역시, 도
+        // https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes?regcode_pattern=*00000000
+
+        // 시도가 바뀌면 구군정보 얻기.
+        document.querySelector("#sido").addEventListener("change", function () {
+          if (this[this.selectedIndex].value) {
+            let regcode = this[this.selectedIndex].value.substr(0, 2) + "*00000";
+            sendRequest("gugun", regcode);
+          } else {
+            initOption("gugun");
+            initOption("dong");
+          }
+        });
+
+        // 구군이 바뀌면 동정보 얻기.
+        document.querySelector("#gugun").addEventListener("change", function () {
+          if (this[this.selectedIndex].value) {
+            let regcode = this[this.selectedIndex].value.substr(0, 5) + "*";
+            sendRequest("dong", regcode);
+          } else {
+            initOption("dong");
+          }
+        });
+
+        async function sendRequest(selid, regCode) {
+        	let data = JSON.stringify({sign:"getRegCode",selid,regCode});
+        	console.log(data);
+        	data = await fetch("main",{method:"POST",body:data});
+        	data = await data.text();
+        	data = JSON.parse(data);
+        	console.log(data);
+        	addOption(selid,data);
+          //const url = "https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes";
+         // let params = "regcode_pattern=" + regcode + "&is_ignore_zero=true";
+         // fetch(`${url}?${params}`)
+          //  .then((response) => response.json())
+           // .then((data) => addOption(selid, data));
+        }
+
+        function addOption(selid, data) {
+          let opt = ``;
+          initOption(selid);
+          switch (selid) {
+            case "sido":
+              opt += `<option value="">시도선택</option>`;
+              data.regcodes.forEach(function (regcode) {
+                opt += `
+                  <option value="${regcode.code}">${regcode.name}</option>
+                  `;
+              });
+              break;
+            case "gugun":
+            	opt += `<option value="">구군선택</option>`;
+                data.regcodes.forEach(function (regcode) {
+                	if(regcode.name!=null){
+                  opt += `
+                    <option value="${regcode.code}">${regcode.name}</option>
+                    `;
+                	}
+                });
+                break;
+            	
+            case "dong":
+            	opt += `<option value="">동선택</option>`;
+                data.regcodes.forEach(function (regcode) {
+                	if(regcode.name!=null){
+                        opt += `
+                          <option value="${regcode.code}">${regcode.name}</option>
+                          `;
+                      	}
+                });
+                break;
+          }
+          document.querySelector(`#${selid}`).innerHTML = opt;
+        }
+
+        function initOption(selid) {
+          let options = document.querySelector(`#${selid}`);
+          options.length = 0;
+          // let len = options.length;
+          // for (let i = len - 1; i >= 0; i--) {
+          //   options.remove(i);
+          // }
+        }
+
+        ///////////////////////// 아파트 매매 정보 /////////////////////////
+
+
+
+      </script>
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <section class="py-8" id="team">
+      <div class="bg-holder" style="
+            background-image: url(assets/img/gallery/testimonial-bg.png);
+            background-position: center;
+            background-size: cover;
+          "></div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xxl-5 text-center mx-auto mb-5">
+            <h2>Hi we are team 5 in Seoul_19</h2>
+            <p class="mb-5">Feedbacks please~</p>
+          </div>
+        </div>
+        <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row h-100">
+                <div class="col-lg-6 mb-3 mb-md-0">
+                  <div class="card card-span h-100 bg-transparent">
+                    <div class="card-body my-2">
+                      <div class="d-sm-flex">
+                        <img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/mark.png" height="100"
+                          alt="..." />
+                        <div class="flex-1 ps-2">
+                          <p class="my-3">
+                            &quot;Hi my name is RyeoHwan I want to be a Backend developer&quot;
+                          </p>
+                          <h6 class="mb-0 fs--1">-RyeoHwan Ahn</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3 mb-md-0">
+                  <div class="card card-span h-100 bg-transparent">
+                    <div class="card-body my-2">
+                      <div class="d-sm-flex">
+                        <img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/emily.png" height="100"
+                          alt="..." />
+                        <div class="flex-1 ps-2">
+                          <p class="my-3">
+                            &quot;Hi my name is Jinho I want to be an Algorithm Master&quot;
+                          </p>
+                          <h6 class="mb-0 fs--1">-Jinho Kong</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <section class="py-0 py-xxl-6" id="help">
+      <div class="bg-holder" style="
+            background-image: url(assets/img/gallery/footer-bg.png);
+            background-position: center;
+            background-size: cover;
+          "></div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row min-vh-75 min-vh-xl-50 pt-10">
+          <div class="col-6 col-md-4 col-xl-3 mb-3">
+            <h5 class="lh-lg fw-bold text-white">menus</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg">
+                <a class="text-200 text-decoration-none" href="#!">카페소개</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-200 text-decoration-none" href="#!">개인정보처리방침</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-200 text-decoration-none" href="#!">이용약관</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-200 text-decoration-none" href="#!">오시는길</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row flex-center pb-3">
+            <div class="col-md-6 order-0">
+              <p class="text-200 text-center text-md-start">
+                All rights Reserved &copy; SSAFY, 2022
+              </p>
+            </div>
+            <div class="col-md-6 order-1">
+              <p class="text-200 text-center text-md-end">
+                Made with&nbsp;
+                <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                  fill="#A8B7FF" viewBox="0 0 16 16">
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z">
+                  </path>
+                </svg>&nbsp;by&nbsp;<a class="text-200 fw-bold" href="https://www.instagram.com/5tsayo/" target="_blank">RyeoHwan
+                  Jinho
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" integrity="sha512-aUhL2xOCrpLEuGD5f6tgHbLYEXRpYZ8G5yD+WlFrXrPy2IrWBlu6bih5C9H6qGsgqnU6mgx6KtU8TreHpASprw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/my.js"></script>
+  <script src="assets/js/apt.js"></script>
+  <script src="assets/js/star.js"></script>
+  <script src="vendors/@popperjs/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="vendors/fontawesome/all.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+</body>
+
+</html>
